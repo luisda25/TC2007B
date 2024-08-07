@@ -41,7 +41,7 @@ Estos 3 elementos dan la protección de la CIA
 "La ciberseguridad es una subdisciplina de la seguridad de la información, enfocada en proteger los sistemas y redes digitales." -ISACA
 
 <p align="center">
- <img src="Fotos/Information_Security.png" width="400" height="400">
+ <img src="Fotos/Information_Security.png" width="225" height="225">
 </p>
 
 Protección de la información en cualquier formato. Ej. Digital o física
@@ -51,7 +51,7 @@ Protección del ámbito cibernético. Ej. Internet
 ## Áreas en Seguridad
 
 <p align="center">
- <img src="Fotos/Áreas_Seguridad.png" width="400" height="400">
+ <img src="Fotos/Áreas_Seguridad.png" width="600" height="600">
 </p>
 
 
@@ -60,7 +60,7 @@ Protección del ámbito cibernético. Ej. Internet
 Los actores de amenaza son entidads que pueden comprometer la seguridad de una organización.
 
 <p align="center">
- <img src="Fotos/Actores_Amenaza.png" width="400" height="400">
+ <img src="Fotos/Actores_Amenaza.png" width="475" height="400">
 </p>
 
 
@@ -110,7 +110,7 @@ Tipos de controles:
 ## Modelo de Defensa en Profundidad
 
 <p align="center">
- <img src="Fotos/Modelo_Defensa.png" width="400" height="400">
+ <img src="Fotos/Modelo_Defensa.png" width="600" height="600">
 </p>
 
 ## Marcos de Referencia
@@ -123,5 +123,5 @@ Sector específico:
 - HIPAA (salud)
 
 <p align="center">
- <img src="Fotos/NIST.png" width="400" height="400">
+ <img src="Fotos/NIST.png" width="275" height="275">
 </p>
