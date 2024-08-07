@@ -1,4 +1,4 @@
-# Introducción a CiberSeguridad
+# Introducción a la Seguridad
 ## Activos de TI (IT Assets)
 Cualquier elemento de tecnología de la información utilizado para agregar valor a la organización. Por ejemplo: Hardware, Software, información, ...
 
