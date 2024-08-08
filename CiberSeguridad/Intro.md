@@ -97,20 +97,20 @@ Tipos de controles:
 - __Transferencia__: Seguros financieros
 
 ### Actividad: ¿Qué tipo de control es?
-1. Outsourcing de Seguridad. __<>__
-2. Segmentación de red. __<>__
-3. NACL. __<>__
-4. SIEM. __<>__
-5. Política de contraseñas seguras. __<>__
-6. IPS. __<>__
-7. DRP. __<>__
-8. Logs de un sistema. __<>__
-9. Correción de configuración. __<>__
+1. Outsourcing de Seguridad. __Transferencia__
+2. Segmentación de red. __Prevención__ podría entrar en __Mitigación__
+3. NACL. __Prevención__
+4. SIEM. __Detección__
+5. Política de contraseñas seguras. __Disuasión__
+6. IPS. __Detección__
+7. DRP. __Recuperación__
+8. Logs de un sistema. __Detección__
+9. Correción de configuración. __Mitigación__
 
 ## Modelo de Defensa en Profundidad
 
 <p align="center">
- <img src="Fotos/Modelo_Defensa.png" width="600" height="600">
+ <img src="Fotos/Modelo_Defensa.png" width="650" height="600">
 </p>
 
 ## Marcos de Referencia
