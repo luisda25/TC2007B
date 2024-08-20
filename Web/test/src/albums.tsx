@@ -1,35 +1,31 @@
 import {useMediaQuery, Theme} from '@mui/material';
-import {List, SimpleList, Datagrid, TextField, EmailField, ReferenceField, EditButton, ReferenceInput, SimpleForm, TextInput, Edit, Create} from 'react-admin';
+import {List, SimpleList, Datagrid, TextField, EmailField, Edit, SimpleForm, TextInput, Create, required, ReferenceField, ReferenceInput} from 'react-admin';
 
-export const PostList= () => (
+export const AlbumsList = () => (
     <List>
         <Datagrid>
-            <TextField source = "id"/>
             <ReferenceField source = "userId" reference = "users"/>
+            <TextField source = "id"/>
             <TextField source = "title"/>
-            <TextField source = "body"/>
-            <EditButton/>
         </Datagrid>
     </List>
 );
 
-export const PostEdit = () => (
+export const AlbumsEdit = () => (
     <Edit>
         <SimpleForm>
-            <TextInput disabled source = "id" InputProps = {{disabled: true}}/>
             <ReferenceInput source = "userId" reference = "users" InputProps = {{disabled: true}}/>
+            <TextInput disabled source = "id" InputProps = {{disabled: true}}/>
             <TextInput source = "title"/>
-            <TextInput multiline source = "body"/>
         </SimpleForm>
     </Edit>
 );
 
-export const CreatePost = () => (
+export const AlbumsCreate = () => (
     <Create>
         <SimpleForm>
             <ReferenceInput source = "userId" reference = "users"/>
             <TextInput source = "title"/>
-            <TextInput source = "body" multiline rows = {5}/>
         </SimpleForm>
     </Create>
 );
