@@ -1,8 +1,12 @@
 import {useMediaQuery, Theme} from '@mui/material';
 import {List, SimpleList, Datagrid, TextField, EmailField, Edit, SimpleForm, TextInput, Create, required, ReferenceField, ReferenceInput} from 'react-admin';
 
+const albumFilters = [
+    <TextInput source = "q" label = "Search" alwaysOn />,
+    <ReferenceInput source = "userId" label = "User" reference = "users" />,
+];
 export const AlbumsList = () => (
-    <List>
+    <List filters = {albumFilters}>
         <Datagrid>
             <ReferenceField source = "userId" reference = "users"/>
             <TextField source = "id"/>

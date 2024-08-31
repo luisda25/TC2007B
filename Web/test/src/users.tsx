@@ -1,8 +1,12 @@
 import {useMediaQuery, Theme} from '@mui/material';
 import {List, SimpleList, Datagrid, TextField, EmailField, Edit, SimpleForm, TextInput, Create, required} from 'react-admin';
 
+const userFilters = [
+    <TextInput source = "q" label = "Search" alwaysOn />,
+];
+
 export const UserList= () => (
-    <List>
+    <List filters = {userFilters}>
         <Datagrid>
             <TextField source = "id"/>
             <TextField source = "name"/>
