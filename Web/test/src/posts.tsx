@@ -1,5 +1,5 @@
 import {useMediaQuery, Theme} from '@mui/material';
-import {List, SimpleList, Datagrid, TextField, EmailField, ReferenceField, EditButton, ReferenceInput, SimpleForm, TextInput, Edit, Create} from 'react-admin';
+import {useNotify, useRefresh, useRedirect, List, SimpleList, Datagrid, TextField, EmailField, ReferenceField, EditButton, ReferenceInput, SimpleForm, TextInput, Edit, Create} from 'react-admin';
 
 
 const postFilters = [
@@ -19,7 +19,12 @@ export const PostList= () => (
     </List>
 );
 
-export const PostEdit = () => (
+export const PostEdit = () => {
+    const notify = useNotify();
+    const refresh = useRefresh();
+    const redirect = useRedirect();
+    
+    return(
     <Edit>
         <SimpleForm>
             <TextInput disabled source = "id" InputProps = {{disabled: true}}/>
@@ -28,7 +33,7 @@ export const PostEdit = () => (
             <TextInput multiline source = "body"/>
         </SimpleForm>
     </Edit>
-);
+)};
 
 export const CreatePost = () => (
     <Create>
