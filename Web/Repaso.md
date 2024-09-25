@@ -69,18 +69,18 @@ Partes del ciclo del sistema:
 Documento que especifica las pruebas que se llevaran a cabo donde se definen casos y metodos para satisfacer el objetivo principal. El plan no estatico es cuando podemos actualizar este documento.
 
 Test plan features
-1. Objetivo
-2. Enfoque
-3. Metodología de pruebas
-4. Asunciones
-5. Riesgos
-6. Plan de mitigación
-7. Rol y responsabilidades
-8. Agenda
-9. Seguimiento de defectos
-10. Ambiente de pruebas
-11. Criterio de entrada y salida
-12. Entregables
+1. Objetivo: describe el punto del plan de pruebas y lista las pruebas a realizar
+2. Enfoque: define los escenarios que se van y los que no se van a probar
+3. Metodología de pruebas: definir que metodos se usaran para probar el sistema, se basan en los requerimientos de la aplicación
+4. Asunciones: hacer hipotesis de las pruebas
+5. Riesgos: Riesgos que puedan ocurrir en la prueba
+6. Plan de mitigación: plan de reserva por si ocurre algún riesgo
+7. Rol y responsabilidades: Lista de los miembros y sus responsabilidades
+8. Agenda: inicio y fin de cada actividad con relación a las pruebas
+9. Seguimiento de defectos: comunicación entre identificador y el que arregla el problema para luego volver a hacer la prueba
+10. Ambiente de pruebas: Lista de hardware y software al usar en la prueba
+11. Criterio de entrada y salida: condiciones que debe tener para empezar o terminar la prueba
+12. Entregables: Reporte de la prueba para el cliente
 
 ### Pasos para plan de pruebas
 1. Analizar la aplicación: como el objetivo de la pagina, quien lo va a usar, cuales son las funcioens y como funciona
@@ -93,8 +93,53 @@ Test plan features
 8. Determinar entregables: Lista de documentos y herrramientas que apoyan a las tareas de las pruebas.
 
 ### Tipos de pruebas
-- Unit Testing: Se prueban los componentes individualmente
-- Integration testing: Se prueban los componentes juntos, completos
+1. Unit Testing: Se prueban los componentes individualmente. 
+La ventaja es que no se necesitan otros componentes para proibar este. Desventaja que no vamos a identificar todos los errores del sistema.
+2. Integration testing: Se prueban los componentes juntos, completos.
+- Big bang: se prueba todo el sistema en conjunto. Es bueno para aplicaciones pequeñas. Para probarlo se debe esperar a que todos los modulos esten terminados.
+- Bottom-up: de los modulos mas pequeños ir integrando poco a poco los más grandes
+- Top-down; de los modulos grandes, ir integrando poco a poco los más pequeños
+
+### Pruebas de usabilidad
+Que tan bien puede usar el usuario el producto para cumplir una tarea de manera eficiente, efectiva y satisfactoria.
+
+Componentes:
+- Learnability
+- Efficiency
+- Memorability
+- Errors
+- Satisfaction
+
+#### Jakob's ten usability heuristics
+1. Visibility of system status: El diseño debe de informar al usuario de lo que está pasando
+2. Match between system and the Real World: El diseño debe de hablar de una manera en que el usuario pueda entenderlo, sin tecnicismos.
+3. User Control and Freedom: Asegurar que ciertas acciones no hayan sido por accidente, confirmar la selección del usuario.
+4. Consistency and Standards: Consistencia con las palabras para las acciones y los lugares de los botones.
+5. Error prevention: Buenos mensajes de error para prevenir problemas.
+6. Recognition rather than Recall: evitar que los usuarios tengan que estar recordando la información haciendoselas visible.
+7. Flexibility and Efficiency of use: Atajos para mejorar la navegación de un usuario experto.
+8. Aesthetic and minimalist design: No se debe contener información que no sea relevante.
+9. Recognize, Diagnose, and Recover from errors: Los errores de mensaje deben aparecer explicados en lenguaje normal. no mandar errores de codigos.
+10. Help and Documentation: Documentacion por si hay alguna duda del sistema, algo tipo faqs etc...
+
+## Componentes y Hooks
+
+#### Componentes
+Los componentes son funciones de javascript que regresan HTML (JSX markup). Deben tener el nombre empezando por mayúscula, pueden hacer render de otros compoenentes. Tienen dos tipos: de clase y funcionales.
+
+### Hooks
+Los hooks son funciones que permiten crear o accesar estados de react y del ciclo de vida en los componentes
+
+##### Hooks básicos
+
+- useState: el valor que reciba el hook se declara como el valor inicial hasta que se vuelva a declarar con la funcion set.
+- useEffect: Realiza efectos secundarios en la funcion de los componentes despues de cada render
+- useMediaQuery: analiza el temaño de la pantalla actual.
+- warnWhenUnsavedChanges: Pregunta al usuario para confirmar un cambio antes de salir de la página.
+- useNotify: hace display de una notificación en la parte inferior de la pantalla.
+
+
+
 
 
 
